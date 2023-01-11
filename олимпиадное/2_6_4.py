@@ -7,4 +7,3 @@ while m != 0 and n != 0:
     else:
         m = m % n
 print(max(m, n))
-print(9)
