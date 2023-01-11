@@ -1,5 +1,5 @@
 a = int(input())
-d = 2
+d = 1
 s = []
 while d * d < a:
     if a % d == 0:
