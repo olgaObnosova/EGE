@@ -1,4 +1,4 @@
-print('версия 12,28')
+print('версия ')
 f=open('12.txt')
 sp=[]
 for line in f:

@@ -1,10 +1,12 @@
 a = int(input())
-n = 2
-s=[]
-while n * n <= a:
-    if a % n == 0 and n**0.5 == int(n**0.5):
-        s.append(n)
-
+d = 2
+s = []
+while d * d < a:
+    if a % d == 0:
+        if (a//d)**0.5 == int((a//d)**0.5):
+            print(a // d)
+            break
+        d += 1
     else:
-        n+=1
-print(max(s))
+        d += 1
+
