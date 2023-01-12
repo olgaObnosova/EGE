@@ -1,5 +1,5 @@
 with open('27-B_4721.txt') as f:
-    maxx =  0
+    maxx = 0
     n, v, m = map(int, f.readline().split())
     sp = [0]*100084
     for line in f:
