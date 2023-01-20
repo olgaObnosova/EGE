@@ -1,4 +1,4 @@
-p+k = []
+pk = []
 for i in range(161, 17 * (10 ** 6) + 1, 161):
     a = str(i)
     if '1' in a:
