@@ -1,4 +1,4 @@
-s = 'АБВ БВГ ВГД ГВД ДА'
+s = 'АБ БД ВА ГБВЕ ДЖ ЕВК ЖГ ЗЖД КЗ'
 D = {x[0]: x[1:] for x in s.split()}
 
 def foo(str, e):
@@ -9,5 +9,4 @@ def foo(str, e):
     return sum([foo(str + x, e) for x in D[str[-1]]])
 
 
-print(foo("Г", "Г"))
-
+print(foo("Е", "Е"))

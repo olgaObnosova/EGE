@@ -1,0 +1,12 @@
+file = open('24-2.txt')
+n = file.read()
+m = 0
+maxc = 0
+for i in n:
+    if i in 'ACD':
+        m += 1
+        continue
+    if maxc < m:
+        maxc = m
+    m = 0
+print('', maxc)

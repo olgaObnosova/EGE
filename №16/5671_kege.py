@@ -15,10 +15,9 @@ for i in range(11):
     sp[i] = i
 for i in range(10_000, len(sp)):
     sp[i] = 1
-for i in range(11, 10_000):
-    if i % 2 == 0:
-        sp[i] = i % 10 + sp[i + 2]
-    else:
-        sp[i] = sp[i - 2] - (i - 1) % 10
+for i in range(11, 10_002,2):
+    sp[i] = sp[i - 2] - (i - 1) % 10
+for i in range(9998, -1, -2):
+    sp[i] = i % 10 + sp[i+2]
 print(sp[4500]+sp[5515])
 #print(sp)
