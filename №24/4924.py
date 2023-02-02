@@ -1,4 +1,4 @@
-f = open('4z.txt')
+f = open('4924.txt')
 f = f.read()
 f = f.replace('ZXY', '*')
 f = f.replace('ZYX', '*')

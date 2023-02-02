@@ -1,10 +1,11 @@
-k = 0
-for a in range(1,3000):
-    f=1
-    for x in range(1,2000):
+x=int(input())
+p=int(input())
+y=int(input())
+k=0
+while y>x:
+  x = trunc(x+x*p/100)
+  x=int(x)
 
-        f*= ((a%5==0)and((2020%a!=0)\
-             <=((x%1718==0)<=(2023%a==0))))
 
-    if f:
-        print(a)
+  k+=1
+print(k)
