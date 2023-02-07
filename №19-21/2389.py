@@ -11,7 +11,7 @@ def f(a, b, h, ph):
 for b in range(1, 70):
     for ph in range(5):
         if f(7, b, 0, ph):
-            if ph == 4:
+            if ph == 4:# меняем вот здесь значение
                 print(b)
 # если Ваня 1м ходом, то m=2
 # если Петя 2м ходом, то m=3
