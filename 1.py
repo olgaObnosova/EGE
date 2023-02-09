@@ -1,11 +1,11 @@
-x=int(input())
-p=int(input())
-y=int(input())
+
+
 k=0
-while y>x:
-  x = trunc(x+x*p/100)
-  x=int(x)
+def calls_num():
+    global k
+    k+=1
+    return  k
 
 
-  k+=1
-print(k)
+print(calls_num())
+print(calls_num())
