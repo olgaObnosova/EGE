@@ -1,11 +1,11 @@
-
-
-k=0
-def calls_num():
-    global k
-    k+=1
-    return  k
-
-
-print(calls_num())
-print(calls_num())
+a=int(input())
+b=-1
+b2=-1
+while a>0:
+  if a%10>=b:
+    b2=b
+    b=a%10
+  elif a%10>b2:
+    b2=a%10
+  a=a//10
+print(b, b2)
