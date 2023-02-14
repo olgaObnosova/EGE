@@ -9,6 +9,7 @@ f = f.replace('7', '*')
 f = f.replace('8', '*')
 f = f.replace('9', '*')
 f = f.split('*')
+#print(f)
 maxx = 0
 for x in f:
     if len(x) >= 2 and x[0] == '0' and x[-1] == '1':
