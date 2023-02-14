@@ -1,5 +1,5 @@
 sp = '0123456789abcdef'
-for i in range(200000, 1, -1):
+for i in range(10000, 200000):
     h = hex(i)[2:]
     #print(h)
     if int(h,16) % 2 == 0:
@@ -13,7 +13,9 @@ for i in range(200000, 1, -1):
     #print(h)
     for j in range(2):
         summa = [int(x,16) for x in h]
+        #print(summa)
         summa = sum(summa)
+        #print(summa)
         ost = summa % 16
         h = h + sp[ost]
         #print(h)
@@ -24,5 +26,6 @@ for i in range(200000, 1, -1):
     minc2 = [int(x,16) for x in str(h)]
     minc2 = hex(min(minc2))[2:]
     #print(minc2)
-    if h.count(minc2)*5 == h.count(maxc2):
+    if h.count(minc2)*5 == h.count('f'):
         print(i, h)
+        break
