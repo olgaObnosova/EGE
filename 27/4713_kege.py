@@ -19,7 +19,8 @@ for i in range(len(sp)):
 print(summ)
 for i in range(1,len(sp)):
     pravs = (s - levs)
-    summ = summ + (levs*abs(sp[i][0]-sp[i-1][0])- pravs*abs(sp[i][0]-sp[i-1][0]))
+    summ = summ + (levs*abs(sp[i][0]-sp[i-1][0])\
+                   - pravs*abs(sp[i][0]-sp[i-1][0]))
     #print(levs, pravs, summ, i,abs(sp[i][0]-sp[i-1][0]))
     levs += sp[i][1]
     minn = min(minn, summ)
