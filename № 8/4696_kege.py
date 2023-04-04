@@ -8,5 +8,6 @@ for x in a:
             '56' not in x and '65' not in x and \
              '76' not in x and '67' not in x and\
             x.count('6') == 1:
+
         k += 1
 print(k)

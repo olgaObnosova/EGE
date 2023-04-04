@@ -1,12 +1,14 @@
-sp=[]
+def f(n):
+    l = bin(n)[2:]
+    if n % 2 == 0:
+        return int("1" + l + "0", 2)
+    else:
+        return int("11" + l + "11", 2)
 
-n=135
-for j in range(500):
-    sp=set()
-    for i in range(2, n+j*2):
-        if (n+j*2)%i==0:
-            sp.add(i)
-    if len(sp)>0:
-        print(sp, j)
-        if len(sp)==3:
-            break
+
+for n in range(1, 1000):
+    if f(n) > 225:
+        print(f(n))
+        break
+
+

@@ -8,6 +8,8 @@ with open('27B_6638.txt') as f:
 for i in range(len(sp)):
     s+=abs(sp[0][0]-sp[i][0])*sp[i][1] # сумма если в 0
     summ+=sp[i][1] # сумма всех
+print(s)
+print(summ)
 minn=s
 r = 0
 lefts = sp[0][1]
