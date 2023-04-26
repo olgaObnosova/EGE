@@ -1,9 +1,10 @@
-def f(n):
-    if n==0:
-        return 0
-    elif n%2==1:
-        return f(n-1)+1
-    elif n%2==0:
-        return f(n//2)
-for i in range(100):
-    print(f(i), i, bin(i))
+k=0
+minn=float('inf')
+with open('13.txt') as f:
+    sp=[int(x) for x in f]
+for i in range(len(sp)-1):
+    if abs(sp[i])%8==0 and sp[i+1]%8==0:
+        k+=1
+        minn=min(minn, sp[i]+sp[i+1])
+print(k, minn)
+print((~18 | (132>> 2)) & (86 << 1))

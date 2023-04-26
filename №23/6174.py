@@ -9,9 +9,11 @@ def sm(n):
 def f(s, e, s2, ssm):
     if s > e:
         return 0
-    elif s == e and (s2+ssm == 7*'+'+7*'*'):
+    elif s == e and (s2==7 and ssm==7):
+        #print(ssm, s2)
         return 1
-    return f(s + 2, e, s2 + "+", ssm) + f(s + sm(s), e, s2, ssm+'*')
+    return f(s + 2, e, s2 + 1, ssm)\
+        + f(s + sm(s), e, s2, ssm+1)
 
 
-print(f(1, 70, '', ''))
+print(f(1, 70, 0, 0))

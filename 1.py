@@ -1,14 +1,22 @@
-def f(n):
-    l = bin(n)[2:]
-    if n % 2 == 0:
-        return int("1" + l + "0", 2)
-    else:
-        return int("11" + l + "11", 2)
 
+def delit(n):
+    s=set()
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            s.add(i)
+            s.add(n//i)
+    return sum(s)+1
+def dr(a,b):
 
-for n in range(1, 1000):
-    if f(n) > 225:
-        print(f(n))
-        break
-
-
+    if delit(a) ==b and  delit(b)==a:
+        return a,b
+    return 0
+f=1
+a, b = map(int, input().split())
+for i in range(a,b-1):
+    for j in range(i+1, b):
+        if dr(i,j):
+            f=0
+            print(dr(i,j))
+if f:
+    print(0)
