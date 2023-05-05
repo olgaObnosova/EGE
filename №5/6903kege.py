@@ -7,5 +7,5 @@ for i in range(100):
         else:
             n = '10' + n[2:] + '11'
     n = int(n, 2)
-    maxx=max(maxx, n)
+    maxx = max(maxx, n)
 print(maxx)

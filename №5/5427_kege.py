@@ -8,4 +8,3 @@ for i in range(1, 1000):
     if r > 224:
         minn = min(r, minn)
 print(minn)
-

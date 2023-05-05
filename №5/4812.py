@@ -1,4 +1,4 @@
-for n in range(16080808, 1,-1):
+for n in range(16080808, 1, -1):
     s1 = 0
     s2 = 0
     for x in str(n):

@@ -7,6 +7,6 @@ for i in range(100):
         n = '11' + n + '11'
     r = int(n, 2)
     if r > 225:
-        #print(r)
+        # print(r)
         minn = min(minn, r)
 print(minn)
