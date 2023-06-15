@@ -13,3 +13,4 @@ for b in range(1, 74):
         if f(9, b, 0, ph):
             if ph == 4:
                 print(b)
+            break
