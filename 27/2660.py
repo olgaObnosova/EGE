@@ -1,11 +1,10 @@
 #https://kompege.ru/variant?kim=25003483
-f=open('27_B_25003483.txt')
+f=open('27_A_25003483.txt')
 n=int(f.readline())
 S=0
 minr=99999999
 for line in f:
-    a,b
-    a,b
+    a,b= map(int,line.split())
     maxx=max(a,b)
     minn=min(a,b)
     
