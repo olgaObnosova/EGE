@@ -8,8 +8,8 @@ def tr(n):
 maxx=k=mr=0
 a = [int(x) for x in open('17_h.txt')]
 for x in a:
-    #r=tr(abs(x))
-    if abs(x)%100==11:
+    r = tr(abs(x))
+    if len(r)>=2 and r[-2]+r[-1]=='15':
         maxx=max(maxx,x)
 print(maxx)
 for i in range(len(a)-2):
@@ -24,3 +24,4 @@ for i in range(len(a)-2):
             k+=1
 print(k, mr)
 
+#3 99987

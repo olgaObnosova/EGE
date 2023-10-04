@@ -6,5 +6,5 @@ while a > 0:
 s=s[::-1]
 k=s.count('61') + s.count('62')+s.count('63') \
   + s.count('64') +s.count('65')
-
+print(s)
 print(k)
