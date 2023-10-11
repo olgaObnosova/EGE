@@ -7,6 +7,9 @@ for p in range(7, 36):
             if int('161', p)*int('56',p)==int(f'5{x}{y}6',p):
                 print(x,y)
 '''
+import time
+start_time = time.time()
+
 
 for p in range(7, 100):
     pr = (p ** 2 + 6 * p + 1) * (5*p+6)
@@ -17,3 +20,4 @@ for p in range(7, 100):
                 print(x, y, p)
 print(3*38+37) #151
 
+print("--- %s seconds ---" % (time.time() - start_time))

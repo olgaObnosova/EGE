@@ -1,3 +1,4 @@
+
 import itertools as t
 n=int(input())
 sp=[]
