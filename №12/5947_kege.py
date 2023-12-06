@@ -9,6 +9,7 @@ for i in range(3, 51):
             a = a.replace('>2', '2>', 1)
         if '>3' in a:
             a = a.replace('>3', '11>2', 1)
-    if (a.count('1') + a.count('2') * 2 + a.count('3') * 3) % 7 == 0:
+    if (a.count('1') + a.count('2') * 2 \
+        + a.count('3') * 3) % 7 == 0:
         k += 1
 print(k)

@@ -1,6 +1,7 @@
 import itertools as t
 k=0
 s=list(t.product('ПАРЕТ', repeat=8))
+print(s[0])
 for x in s:
     x=''.join(x)
     if x.count('П')==2 and x.count('А')==2 and \

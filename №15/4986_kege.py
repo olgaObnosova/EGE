@@ -1,3 +1,4 @@
+
 for a in range(1, 1000):
     f = 1
     for x in range(1, 10000):
@@ -5,3 +6,5 @@ for a in range(1, 1000):
               ((x % 23 == 0) <= (x not in range(50, 71))))
     if f:
         print(a)
+        break
+
