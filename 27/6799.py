@@ -1,3 +1,5 @@
+import time
+start = time.time()
 with open('27-6799b.txt') as f:
     n, k = map(int, f.readline().split())
     sp=[0]*k
@@ -12,3 +14,5 @@ with open('27-6799b.txt') as f:
             sp[x]+=1
         i+=1
 print(otv)
+end = time.time()
+print((end-start) * 10**3, "ms")

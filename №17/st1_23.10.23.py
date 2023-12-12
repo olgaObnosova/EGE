@@ -6,6 +6,14 @@ for i in range(len(sp)):
         maxc=max(maxc, sp[i])
 print(maxc)
 for i in range(len(sp)-2):
+    t=0
+    if len(str(sp[i]))==4:
+        t+=1
+    if len(str(sp[i+1]))==4:
+        t+=1
+    if len(str(sp[i+2]))==4:
+        t+=1
+     
     if (len(str(sp[i]))==4 and len(str(sp[i+1]))==4 and len(str(sp[i+2]))!=4) or \
             (len(str(sp[i])) == 4 and len(str(sp[i + 2])) == 4 and len(str(sp[i + 1])) != 4) or \
             (len(str(sp[i+1])) == 4 and len(str(sp[i + 2])) == 4 and len(str(sp[i])) != 4):
