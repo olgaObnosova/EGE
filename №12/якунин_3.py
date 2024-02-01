@@ -15,4 +15,4 @@ for i in range(1,300):
     if s==502:
         print(i)
 print(bin(82), bin(96))
-
+print(bin(131),bin(240))
