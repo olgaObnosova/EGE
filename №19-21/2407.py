@@ -3,10 +3,10 @@ def f(a, b, c, m):
         return c % 2 == m % 2
     elif c == m:
         return False
-    h = [f(a+1, b, c+1,m), f(a*2, b, c+1, m) ,\
-         f(a, b+1, c+1, m) , f(a, b*2, c+1, m)]
+    h = [f(a+2, b, c+1,m), f(a*2, b, c+1, m) ,\
+         f(a, b+2, c+1, m) , f(a, b*2, c+1, m)]
     return any(h) if (c+1) % 2 == m % 2 else all(h)
 for b in range(1, 64):
-    for m in range(5):
-        if f(5, b, 0, m):
-            print(b, m)
+
+    if f(5, b, 0, 2):
+        print(b)

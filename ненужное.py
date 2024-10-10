@@ -1,7 +1,2 @@
-s ='7' * 120
-while '8887' in s or '77' in s:
-    if '8887' in s:
-        s = s.replace('8887','8',1)
-    else:
-        s = s.replace('77','8',1)
-print(s)
+print(*[bin(int(x))[2:] for x in '172.16.168.0'.split('.')])
+print(750//700 + bool(700%700))

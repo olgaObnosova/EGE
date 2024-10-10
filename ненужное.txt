@@ -1,0 +1,9 @@
+n, x = int(input()), 30001
+for i in range(n):
+    s = int(input())
+    if s % 10 == 2:
+        if s < x:
+            x = s
+print(x)
+
+
