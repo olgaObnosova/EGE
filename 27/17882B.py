@@ -1,5 +1,6 @@
 from math import sqrt
-
+import time
+start = time.time()
 file = open("27_B_17882.txt")
 stars = [[float(j) for j in i.split()] for i in file]
 klaster1 = [star for star in stars if star[1] > 7]
@@ -47,3 +48,7 @@ print(centroid1, centroid2, centroid3)
 cr_ar_x = (centroid1[0] + centroid2[0] + centroid3[0]) / 3
 cr_ar_y = (centroid1[1] + centroid2[1] + centroid3[1]) / 3
 print(cr_ar_x * 10_000, cr_ar_y * 10_000)
+end = time.time()
+print(time.process_time())
+print(end-start)
+# 37522.944615707165 51277.95880214987

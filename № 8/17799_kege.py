@@ -1,8 +1,8 @@
 import  itertools as t
 sp=list(t.product('агемнрту', repeat=4))
-sp2=list(t.permutations('агемнрту', r=4))
+#sp2=list(t.permutations('агемнрту', r=4))
 print(sp[:5])
-print(sp2[:5])
+#print(sp2[:5])
 k=0
 for x in sp:
     x=''.join(x)

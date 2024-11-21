@@ -7,5 +7,5 @@ def f(s,h,ph):
             f(s+4, h+1, ph), f(s*2, h+1, ph)]
     return any(comb) if (h+1)%2==ph%2 else  all(comb)
 for s in range(1, 60):
-        if f(s, 0, 3):
+        if f(s, 0, 4) and not f(s, 0, 2):
            print(s)

@@ -1,7 +1,9 @@
 from math import sqrt
 
 file = open("27_A_17882.txt")
+
 stars = [[float(j) for j in i.split()] for i in file]
+#print(stars[:5])
 klaster1 = [star for star in stars if star[1] < 3]
 klaster2 = [star for star in stars if star[1] > 3]
 
