@@ -5,4 +5,5 @@ def f(n):
         return 2*f(n-1)-f(n-2)
     else:
         return f(n-1)-2*f(n-2)-3
+
 print(f(15))
