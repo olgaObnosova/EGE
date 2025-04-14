@@ -7,7 +7,6 @@ for line in f:
     a,b= map(int,line.split())
     maxx=max(a,b)
     minn=min(a,b)
-    
     S+=maxx
     if (maxx-minn)%3!=0:
         minr=min(minr,maxx-minn)

@@ -4,7 +4,7 @@ def delit(n):
         if n%i==0:
             s.add(i)
             s.add(n//i)
-    return list(s)
+    return s
 for i in range(224466,664423):
     if i%5==0 and i%7==0 and i%13==0 and\
        i%25!=0 and i%49!=0 and i%169!=0:
@@ -13,5 +13,5 @@ for i in range(224466,664423):
         if f[-1]<=100000 and f[-1]%100==19:
             print(i)
             print(max(f))
-    
+
     

@@ -1,2 +1,2 @@
 import struct
-print(struct.pack('!f', -21.25).hex())
+print(struct.pack('!d', -38))

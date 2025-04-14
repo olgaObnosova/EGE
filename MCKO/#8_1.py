@@ -1,3 +1,3 @@
-for i in range(1, 60):
-    if (i*13)%12==1:
-        print(i)
+for d in range(1, 40):
+    if (d*11)%((5-1)*(7-1))==1:
+        print(d)
