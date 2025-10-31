@@ -1,5 +1,6 @@
 import string as s
 alf = s.digits+s.ascii_lowercase
+print(alf)
 alf = alf[:21]
 for x in alf:
     a1 = int(f'82934{x}2', 21)

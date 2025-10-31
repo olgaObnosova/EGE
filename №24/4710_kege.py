@@ -12,5 +12,7 @@ for x in f:
         k += 1
         maxx = max(maxx, k)
     else:
+        #maxx = max(maxx, k)
         k = 0
+
 print(maxx)

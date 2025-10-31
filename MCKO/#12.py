@@ -1,12 +1,12 @@
-k=0
-for i in range(9, 10000, 9):
-    s=i
-    n=600
-    while s>0:
-        s=s//8
-        n=n//3
-    if n==7:
-        k+=1
-print(k)
-
-
+def f(a, b, h):
+    if (a+b)<=64:
+        return h%2==0
+    elif h==0:
+        return False
+    com = [f(a-2, b, h-1), f(a, b-2, h-1),\
+           f(a-6, b, h-1), f(a, b-6, h-1),\
+           f(a//3, b, h-1), f(a, b//3, h-1)]
+    return any(com) if (h-1)%2==0 else all(com)
+print([x for x in range(7, 65) if f(x, 58, 2)])
+print([x for x in range(7, 65) if f(x, 58, 3) and not f(x, 58, 1)])
+print([x for x in range(7, 65) if f(x, 58, 4) and not f(x, 58, 2)])

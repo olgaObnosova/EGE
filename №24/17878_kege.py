@@ -6,7 +6,7 @@ f = f.replace('-*', '@')
 f = f.replace('*-', '@')
 f = f.replace('**', '@')
 f = f.split('@')
-print(f[:2])
+print(f[:5])
 maxl = 0
 for x in f:
     # print(x)
