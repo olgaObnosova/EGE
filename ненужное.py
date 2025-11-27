@@ -1,3 +1,1 @@
-a='12131456'
-a = '*'+ a[1:]
-print(a)
+sp=[[int(x) for x in line] for line in f]

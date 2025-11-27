@@ -11,5 +11,7 @@ st= max(sp, key = len) #НЕ ИЩЕТ ПОСЛЕДНИЙ!!!!
 # которыми не следует такой же символ, то есть \
 # каждый символ из пары правильно чередуется с другим символом.
 print(st)
+print(f.index((st)))
+print(f[81867-5: 81867+35+5])
 print(len(st)+1) #YXYXYZXYXYXYZXZYXZYZYXYXYXZXYZYXYXY
 

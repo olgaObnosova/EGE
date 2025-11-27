@@ -6,4 +6,4 @@ def f(start,stop):
         return 1
     else:
         return f(start-2,stop)+f(start-5,stop)
-print(f(23,2))
+print(f(23,15)*f(15, 2))

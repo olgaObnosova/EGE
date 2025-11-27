@@ -2,10 +2,8 @@ def dl(n):
     s=set()
     for i in range(2, int(n**0.5)+1):
         if n%i==0:
-            if pr(i):
-                s.add(i)
-            if pr(n//i):
-                s.add(n//i)
+            s.add(i)
+            s.add(n//i)
     return s
 def pr(n):
     for i in range(2, int(n**0.5)+1):
