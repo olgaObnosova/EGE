@@ -12,9 +12,10 @@
 #         print(a)
 # end=t.time()
 # print(end-start)
-for a in range(1, 10_000):
-    f=1
-    for x in range(1, 10_000):
-        f*=(x%128==0)<=((x%a!=0)<=(x%80!=0))
-    if f:
-        print(a)
+# for a in range(1, 10_000):
+#     f=1
+#     for x in range(1, 10_000):
+#         f*=(x%128==0)<=((x%a!=0)<=(x%80!=0))
+#     if f:
+#         print(a)
+print(10_000**3/10**6/60/60/24)

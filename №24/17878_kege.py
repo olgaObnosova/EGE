@@ -6,8 +6,10 @@ f = f.replace('-*', '@')
 f = f.replace('*-', '@')
 f = f.replace('**', '@')
 f = f.split('@')
-print(f[:5])
 maxl = 0
+f.sort(key = len)
+for x in f[-3:]:
+    print(x, len(x))
 for x in f:
     # print(x)
     try:
