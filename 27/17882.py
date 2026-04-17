@@ -4,7 +4,7 @@ file = open("27_A_17882.txt")
 kl1=[]
 kl2=[]
 stars = [[float(x) for x in line.split()] for line in file]
-print(stars[:5])
+print(stars[:5]) #[x,y]
 for x in stars:
     if x[1]<3:
         kl1.append(x)

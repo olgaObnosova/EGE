@@ -1,7 +1,7 @@
 with open('24_1302.txt') as f:
     f=f.readline()
-f=f.replace('XZZY', '*')
-f=f.split('*')
+f=f.replace('XZZY', '*') #aaaaaXZZYaaa
+f=f.split('*') #[Xaaaaa, aaa]
 maxx=0
 for x in f:
     if len(x)>maxx:

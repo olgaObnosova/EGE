@@ -7,7 +7,7 @@ for x in f: #AAWAAAAAAA
         maxx2=max(maxx2, cnt)
     else:
         cnt=0
-print(maxx2)
+print(maxx2) # [aaa, aaa, aaaaa]
 
 f=f.replace('G', '*')
 f=f.replace('W', '*')

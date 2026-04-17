@@ -1,3 +1,10 @@
+# for a in range(1, 100):
+#     f = 1
+#     for x in range(1, 1000):
+#         for y in range(1, 1000):
+#             f *= ((x<a) and (y<3*a) or (2*x+y>128))
+#     if f:
+#         print(a)
 def fn(x, y, a):
     return (x<a) and (y< 3*a) or (2*x+y>128)
 def pr(a):

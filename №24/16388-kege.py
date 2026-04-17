@@ -3,16 +3,14 @@ with open('24_16388.txt') as f:
 #f=f.replace('KLMN', '****')
 k=maxx=0
 s=''
-s2='KLMN'
+s2='KLMN'#
 for i in range(100):
     if s2*i in f:
         print(i)
 print(4*45)
 x = ''
-
 while x + 'KLMN' in s:
-    x += "KLMN"
-
+    x += "KLMN" #  NKLMNKLMNKLMNKLM
 if x + 'K' in s:
     x += 'K'
     if x + 'L' in s:
