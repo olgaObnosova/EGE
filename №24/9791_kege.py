@@ -1,6 +1,6 @@
 import re as r
 with open('9791.txt') as f:
-    f=f.readline()
+    f=f.readline() #1230043
 maxx=0
 sp=r.findall(r'[123456789ABCDEF]+', f)
 for x in sp:

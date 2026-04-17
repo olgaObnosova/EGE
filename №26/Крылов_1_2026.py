@@ -6,12 +6,13 @@ with open('26var01.txt') as f:
         kom.append(int(f.readline()))
     for i in range(int(m)):
         sam.append(int(f.readline()))
-sam.sort(reverse=True)
-kom.sort(reverse=True)
+print(len(kom), len(set(kom)))
+sam.sort(reverse=True) # 100 90 80
+kom.sort(reverse=True) # 101 99 80 80
 pas=[]
 for i in range(len(sam)):
-    for j in range(len(kom)):
-        if sam[i]>=kom[j] and kom[j] not in pas:
-            pas.append(kom[j])
+    for j in range(len(kom)): # 99 80
+        if sam[i]>=kom[j] and (kom[j], j) not in pas:
+            pas.append((kom[j], j))
             break
-print(len(pas))
+print(len(pas), max(pas))

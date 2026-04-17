@@ -1,7 +1,7 @@
 import re
 with open('24_21421.txt') as f:
     f=f.readline()
-reg = r'?:([1-9]|[ab])([0-9]|[ab]*)'
+reg = r'(?:[1-9AB][0-9AB]*)'
 res = sorted(re.findall(reg, f), key=len, reverse=True)
 k=0
 for c in res:
@@ -9,4 +9,3 @@ for c in res:
     k+=1
     if k==5:
         break
-
